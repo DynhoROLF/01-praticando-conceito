@@ -1,0 +1,46 @@
+.main {
+  margin-top: -1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main textarea {
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: 0;
+  resize: none;
+  height: 3.375rem;
+  width: 39.875rem;
+  border-radius: 8px;
+  line-height: 1.4;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.main textarea:focus {
+  border: 1px solid var(--purple-600);
+}
+
+.main button {
+  border-radius: 8px;
+  height: 3.375rem;
+  width: 5.625rem;
+  margin-left: 0.5rem;
+  background: var(--blue-600);
+  color: var(--gray-100);
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  transition: background-color 0.1s;
+}
+
+.main button:hover {
+  background: var(--blue-300);
+}

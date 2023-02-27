@@ -1,46 +1,55 @@
 .main {
-  margin-top: -1.5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  align-items: flex-start;
+  justify-content: space-between;;
+  margin-top: 1.5rem;
 
-.main textarea {
-  background: var(--gray-500);
-  color: var(--gray-100);
-  border: 0;
-  resize: none;
-  height: 3.375rem;
-  width: 39.875rem;
+  background-color: var(--gray-500);
   border-radius: 8px;
-  line-height: 1.4;
-  overflow: hidden;
-  padding: 1rem;
+  padding: 0.75rem;
+  color: var(--gray-100);
 }
 
-.main textarea:focus {
-  border: 1px solid var(--purple-600);
+.main p {
+  margin-top: 0.1rem;
+  text-align: left;
+}
+
+.main .textCompleted {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.main > div {
+  font-size: 20px;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
 }
 
 .main button {
-  border-radius: 8px;
-  height: 3.375rem;
-  width: 5.625rem;
-  margin-left: 0.5rem;
-  background: var(--blue-600);
-  color: var(--gray-100);
-  border: 0;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 0.5rem;
-
-  transition: background-color 0.1s;
+  background: none;
+  border: none;
 }
 
-.main button:hover {
-  background: var(--blue-300);
+.main > button {
+  font-size: 20px;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  outline: transparent;
+}
+
+.main .image {
+  padding: 0.3rem;
+  font-size: 24px;
+  color: var(--gray-300);
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.main .image:hover {
+  color: var(--red);
+  background: var(--gray-400);
 }
